@@ -120,9 +120,9 @@ const App = () => {
 
         {selectedCountry.length > 0 && (
           <div>
-            <ul>
+            <ul className="selected">
               {selectedCountry.map((country, index) => (
-                <li key={index}>
+                <li key={index} className="tag">
                   {country.name}{" "}
                   <button
                     onClick={() => handleRemoveCountry(country)}
